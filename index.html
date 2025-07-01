@@ -9,8 +9,29 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #1a1a1a;
       color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    nav a {
+      color: #00ffcc;
+      margin-left: 2em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
       text-align: center;
-      padding: 50px;
+      padding: 50px 20px;
     }
     h1 {
       font-size: 3em;
@@ -28,28 +49,61 @@
     }
     .features {
       margin-top: 40px;
+      list-style: none;
+      padding: 0;
     }
     .features li {
       margin: 1em 0;
     }
     footer {
       margin-top: 60px;
+      text-align: center;
       color: #555;
+      padding-bottom: 2em;
+    }
+    .about {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #2a2a2a;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
     }
   </style>
 </head>
 <body>
-  <h1>Megahard Doors</h1>
-  <h2>The opposite of Microsoft Windows</h2>
-  <div class="tagline">"We don't crash — we slam."</div>
+  <header>
+    <div><strong>Megahard Doors</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
 
-  <ul class="features">
-    <li>🔐 Closed-source. Literally.</li>
-    <li>🛠️ Every update slams like a freight train.</li>
-    <li>🚪 Doors that lock you out AND in.</li>
-    <li>📴 Blue screen? Ours is a brick wall.</li>
-    <li>🧱 UI designed with concrete. No rounded edges.</li>
-  </ul>
+  <main>
+    <h1>Megahard Doors</h1>
+    <h2>The opposite of Microsoft Windows</h2>
+    <div class="tagline">"We don't crash — we slam."</div>
+
+    <ul class="features">
+      <li>🔐 Closed-source. Literally.</li>
+      <li>🛠️ Every update slams like a freight train.</li>
+      <li>🚪 Doors that lock you out AND in.</li>
+      <li>📴 Blue screen? Ours is a brick wall.</li>
+      <li>🧱 UI designed with concrete. No rounded edges.</li>
+    </ul>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        Founded in a basement with a sledgehammer and a grudge, Megahard Doors is dedicated to building the most unyielding, overbuilt, and unapologetically rigid software ever made. 
+        Our team of rogue sysadmins and caffeine-fueled developers believe every operating system should be as hard to crash as a vault door — or at least as hard to open without proper clearance.
+      </p>
+      <p>
+        We don't innovate. We reinforce. If you want flexibility, try Yoga. If you want control, slam a Megahard Door.
+      </p>
+    </section>
+  </main>
 
   <footer>
     © 2025 Megahard Doors. All rights revoked.
